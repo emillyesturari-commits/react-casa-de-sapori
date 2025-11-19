@@ -1,0 +1,42 @@
+.card_produto {
+  top: 80px;
+    width: 348px;
+    height: 500px;
+    background-color: #F0E6D5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 4px 2px #00000025;
+  font-family: "Italiana", sans-serif;
+
+}
+
+.cards img {
+    width: 100%;
+    height: 242px;
+}
+
+.cards p,
+.cards span {
+    font-size: 30px;
+    width: 90%;
+    
+}
+
+.secao_cards {
+  margin-top: 20px; 
+  width: 100%;
+    max-width: 396px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5%;
+    margin-top: 20px;
+    
+} 
