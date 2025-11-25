@@ -43,58 +43,59 @@ export default function Produtos() {
 
   return (
 
-    
+
 
     <main className='icone_fundo'>
 
-       <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src={banner_1} className="d-block w-100" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={banner_2} className="d-block w-100" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={banner_3} className="d-block w-100" alt="..." />
-                    </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
+      <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={banner_1} className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src={banner_2} className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item">
+            <img src={banner_3} className="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
 
       <section className="cards" >
 
-{
-                        pizza.map((p: Pizza) => ( 
-                           <CardProduto
-                                    nome={p.nome}
-                                    descricao={p.descricao}
-                                    preco={p.preco}
-                                    imagem={p.imagens[0] ?? ""} //?? usado p caso der erro na img 
-                                   
-                                />
-                      ))
-                    }
+        {
+          pizza.map((p: Pizza) => (
+            <CardProduto
+              key={p.id}
+              nome={p.nome}
+              descricao={p.descricao}
+              preco={p.preco}
+              imagem={p.imagens[0] ?? ""} //?? usado p caso der erro na img 
+
+            />
+          ))
+        }
 
 
 
 
       </section>
 
-        <a className="whatsapp" href="https://wa.me/5511999999999?text=Olá%20,%20gostaria%20de%20mais%20informações."
-                target="_blank">
-                <img src={whatsapp} alt="icone do whatsapp" />
-            </a>
-    
+      <a className="whatsapp" href="https://wa.me/5511999999999?text=Olá%20,%20gostaria%20de%20mais%20informações."
+        target="_blank">
+        <img src={whatsapp} alt="icone do whatsapp" />
+      </a>
+
     </main>
   )
 }
