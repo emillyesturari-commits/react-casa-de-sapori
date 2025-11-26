@@ -22,6 +22,38 @@ a {
   text-decoration: none;
   color: black;
 }
+.titulo {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  align-items: center;
+  /* trocar a margin de 0 para auto */
+  margin: 2rem auto;  
+  /* background-color: blueviolet; */
+}
+
+.titulo span {
+  font-size: 55px;
+  text-align: center;
+
+}
+
+.titulo hr {
+  width: 100%;
+  height: 4px;
+  border: none;
+  border-radius: 2px;
+  background-color: #AD271B;
+}
+
+.acessivel {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
 
 
 .box_busca {
