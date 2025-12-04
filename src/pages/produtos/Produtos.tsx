@@ -1,5 +1,5 @@
-import './Produtos.css';
-import whatsapp from '../../assets/WhatsApp.svg-removebg-preview 2.svg';
+import './Produtos.css'
+import whatsapp from '../../assets/icone-whatsapp.png';
 import { useEffect, useState } from 'react';
 import type { Pizza } from '../../types/Pizza';
 import { getPizzas } from '../../services/PizzaService';
