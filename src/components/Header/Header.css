@@ -1,0 +1,94 @@
+header {
+  background-color: #747F42;
+  /* height: 100px; */
+}
+
+.container_cabecalho {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.logo_mobile {
+  display: none;
+}
+
+.conteudo-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box_busca {
+  position: relative;
+}
+
+.icone_lupa {
+  height: 24px;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+.icone_seta {
+  height: 50px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 100px;
+}
+
+.campo_busca {
+  width: 500px;
+  height: 42px;
+  border-radius: 30px;
+  border: solid 1px #cccccc;
+  padding-left: 35px;
+  font-family: "Italiana", sans-serif;
+  font-size: 20px;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 767px) {
+  .me-auto {
+    align-items: end;
+
+  }
+
+  .container_cabecalho {
+    padding: 30px 0;
+  }
+
+  .logo {
+    /* margin: 1rem 0; */
+  }
+
+  .icone_seta {
+    display: none;
+  }
+
+  .div_logo {
+    display: none;
+  }
+
+  .logo_mobile {
+    display: block;
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+  }
+
+  .box_busca{
+    margin: 50px 0;
+  }
+}

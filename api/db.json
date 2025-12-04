@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "email": "CasaDESapori@pizzas.com",
+      "senha": "1234"
+    }
+  ],
+  "pizzas": [
+    {
+      "nome": "Pepperoni",
+      "categorias": ["Pizza"],
+      "descricao": "Pepperoni artesanal, queijo premium e massa crocante. Sabor marcante em cada fatia.",
+      "imagens": ["card_pepperoni.png"],
+      "id": "pz01",
+      "preco": 84.99,
+      "peso": null
+    },
+    {
+      "nome": "Brigadeiro",
+      "categorias": ["Pizza"],
+      "descricao": "Brigadeiro cremoso, base crocante e toque especial de granulado. Doçura e charme que encantam a cada mordida.",
+      "imagens": ["card_brigadeiro.png"],
+      "id": "pz02",
+      "preco": 87.99,
+      "peso": null
+    },
+    {
+      "nome": "Sensação",
+      "categorias": ["Pizza"],
+      "descricao": "Chocolate meio amargo rico, base crocante e M&M's selecionados. Delicadeza e sabor em cada fatia.",
+      "imagens": ["card_sensacao.png"],
+      "id": "pz03",
+      "preco": 87.99,
+      "peso": null
+    },
+    {
+      "nome": "Quatro queijo",
+      "categorias": ["Pizza"],
+      "descricao": "Queijos selecionados, cremosos e equilibrados sobre massa crocante. Sofisticação a cada fatia.",
+      "imagens": ["card_quatro_queijos.png"],
+      "id": "pz04",
+      "preco": 84.99,
+      "peso": null
+    },
+    {
+      "nome": "Frango",
+      "categorias": ["Pizza"],
+      "descricao": "Queijos selecionados, cremosos e equilibrados sobre massa crocante. Sofisticação a cada fatia.",
+      "imagens": ["card_frango.png"],
+      "id": "pz05",
+      "preco": 84.99,
+      "peso": null
+    },
+    {
+      "nome": "Chocolate com M&M's",
+      "categorias": ["Pizza"],
+      "descricao": "Chocolate meio amargo intenso, base crocante e M&M’s especiais. Elegância e sabor em cada pedaço.",
+      "imagens": ["card_choc_mms.png"],
+      "id": "pz06",
+      "preco": 87.99,
+      "peso": null
+    }
+  ]
+}
