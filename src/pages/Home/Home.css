@@ -134,7 +134,7 @@ a {
     font-size: 60px;
 }
 
-.conteudos{
+.conteudos {
 
     background-image: url(../assets/jacinto\ pin.png);
 }
@@ -163,7 +163,7 @@ a {
 
 }
 
-.card {
+.card_categoria {
     margin: 50px 0;
     width: 316px;
     height: 274px;
@@ -203,7 +203,7 @@ a {
 }
 
 h2 {
-    color: #715C5C;
+    color: #60340C;
     padding: 14px 68px 15px 100px;
 }
 

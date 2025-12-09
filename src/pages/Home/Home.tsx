@@ -1,13 +1,31 @@
+
 import './Home.css'
+import type { CardCategoriaProps } from '../../types/CardCategoriaProps'
+import CardCategoria from '../../components/CardCategoria/CardCategoria'
+import { categorias } from '../../data/categorias'
+import { Link } from 'react-router-dom'
+import whatsapp_logo from '../../assets/WhatsApp.svg-removebg-preview 2.svg'
 
 export default function Home() {
   return (
     <>
      <main>
-
+      
         <h1 className="acessivel">Pagina inicial</h1>
-
         <h2 className="titulo_home">Casa Di Sapori</h2>
+        {
+            categorias.map((p: CardCategoriaProps) => (
+              <CardCategoria
+                key={p.titulo}
+                rota={p.rota}
+                titulo={p.titulo}
+                classeCss={p.classeCss}
+                imgIconeCategorias={p.imgIconeCategorias}
+              />
+            ))
+          }
+
+        
 
         <section className="conteudos">
 
@@ -15,52 +33,11 @@ export default function Home() {
 
         <section className="container_home">
             
-
-            <section className="secao_cards">
-
-                <a className="card card_pizza" href="">
-                    <img src="../assets/pizza-getty-1436376727281_v2_1920x1279 1.png" alt=""/>
-                    <h2>Pizzas</h2>
-                </a>
-
-
-
-                <a className="card card_molhos" href="">
-                    <img src="../assets/molho-para-salada 1.png" alt=""/>
-                    <h2>Molhos</h2>
-                </a>
-
-
-
-                <a className="card card_lasanhas" href="">
-                    <img src="../assets/I2 1.png" alt=""/>
-                    <h2>Lasanhas</h2>
-                </a>
-
-
-
-                <a className="card card_queijos" href="">
-                    <img src="../assets/delicious-pieces-cheese-1 1.png" alt=""/>
-                    <h2>Queijos</h2>
-                </a>
-
-
-
-                <a className="card card_massas" href="">
-                    <img src="../assets/macarrao 1.png" alt=""/>
-                    <h2>Massas</h2>
-                </a>
-
-
-
-                <a className="card card_vinhos" href="">
-                    <img src="../assets/Vinho-1 1.png" alt=""/>
-                    <h2>Vinhos</h2>
-                </a>
-
             </section>
-        </section>
-
+        
+         <Link to={"https://wa.me/5511999999999?text=Olá%20,%20gostaria%20de%20mais%20informações."} className="whatsapp" >
+          <img src={whatsapp_logo} alt="icone do whatsapp" />
+        </Link>
 
     </main>
 

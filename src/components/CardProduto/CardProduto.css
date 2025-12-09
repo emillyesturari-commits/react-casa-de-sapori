@@ -23,8 +23,9 @@
 
 .cards p,
 .cards span {
-    font-size: 30px;
-    width: 90%;
+    font-size: 18px;
+    width: 85%;
+    font-family: josefin slab;
     
 }
 

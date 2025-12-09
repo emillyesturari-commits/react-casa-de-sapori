@@ -90,7 +90,7 @@ export default function Produtos() {
             <img src={whatsapp} alt="icone do whatsapp" />
           </a>
           </section>
-        {/* </section> */}
+        
       </main >
     </>
   )
