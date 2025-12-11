@@ -119,8 +119,9 @@ a {
 }
 
   h2{
-    font-size: 35px;
-    
+    font-size: 40px;
+    color: #60340C;
+    display: flex;
   }
 
 /* .card_produto {
@@ -241,13 +242,6 @@ footer p {
       .logo{
     height: 90px;
       }
-
-  .box_busca,
-  .campo_busca,
-  .icone_lupa,
-  .cabecalho_menu {
-    display: none;
-  }
 
   .menu_barras {
     display: flex;

@@ -1,42 +1,55 @@
-.card_categorias {
+
+
+
+
+
+/* ------------------------------------------------------------ */
+.card_categoria {
     margin: 50px 0;
-    width: 316px;
-    height: 274px;
+    width: 260px;
+    height: 250px;
     text-decoration: none;
-    background-color: #F0E6D5;
-    border: solid 1px #60340C;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
-    padding: 10px 50px 40px 10px;
+    border-radius: 36px;
+    /* padding: 10px 10px 40px 10px; */
     justify-content: space-between;
     align-items: center;
-    font-size: 32px;
+    font-size: 40px;
     box-shadow: 0 0 40px 2px #00000075;
-    font-family: "Italianno", "cursive";
-
-
 }
 
-.secao_cards img {
-    width: 276px;
-    height: 184px;
-
+.card_categoria img{
+    width: 90%;
+    margin-top: 10px;
 }
 
-.card_vinhos img {
-    border: solid 1px #60340C;
-    border-radius: 49px;
+.card_pizza{
+   background-color: #F0E6D5;
 }
 
-.img {
-    display: flex;
-    margin-left: 40px;
-
-
+.card_molhos{
+    background-color: #F0E6D5;
 }
 
-h2 {
-    color: #715C5C;
-    padding: 14px 68px 15px 100px;
+.card_lasanhas{
+    background-color: #F0E6D5;
+}
+
+.card_queijos{
+        background-color: #F0E6D5;
+}
+
+.card_massas{
+    background-color: #F0E6D5;
+}
+
+.card_vinhos{
+    background-color: #F0E6D5;
+}
+
+.card_categoria svg:first-child {
+    width: 26px;
+    align-self: flex-end;
 }

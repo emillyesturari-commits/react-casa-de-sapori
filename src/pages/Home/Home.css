@@ -1,275 +1,102 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.main_home {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.container_home {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
 
 }
 
-.acessivel {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
+.imagem_fundo {
+  background-image: url("../../assets/Copilot_20250820_142656\ 2.png");
+  background-size: cover;
 }
 
-header {
-    background-color: #747F42;
-    height: 100px;
+.secao_cards {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
 }
 
-.container_cabecalho {
-    display: flex;
-    justify-content: center;
-    width: 1440px;
-    margin: 0 auto;
-    height: 100%;
-    align-items: center;
-    max-width: 100%;
+.whatsapp {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  transition: transform 0.5s ease-in-out,
+    filter 0.5s ease-in-out;
 }
 
-.cabecalho_menu {
-    max-width: 100%;
-    /* width: 100%; */
-    height: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #ffffff;
-    border: solid 1px #000;
-    font-family: "Italianno", cursive;
-    font-size: 20px;
-    font-weight: 600;
-
+.whatsapp img {
+  width: 80px;
+  filter: drop-shadow(0 5px 1px #00000025);
 }
 
-a {
-    font-family: "Josefin Slab", serif;
-    text-decoration: none;
-    color: black;
+.whatsapp:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 10px 2px #00000025);
 }
 
-.box_busca {
-    position: relative;
-    margin: 0 auto;
+.rodape {
+  width: 100%;
+  height: 60px;
+  background-color: #AD271B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icone_lupa {
-    height: 24px;
-    position: absolute;
-    left: 9px;
-    top: 9px;
-    fill: #ffffff;
-    cursor: pointer;
-    right: 50px;
-    display: flex;
-    justify-items: right;
-}
-
-.seta {
-    height: 50px;
-    cursor: pointer;
-}
-
-.logo {
-    height: 100px;
-}
-
-.campo_busca {
-    width: 500px;
-    height: 42px;
-    border-radius: 30px;
-    border: solid 1px #cccccc;
-    padding-left: 35px;
-    font-family: "Italiana", sans-serif;
-    /* position: relative; */
-    font-size: 15px;
-}
-
-.conteudo {
-    height: 500px;
-}
-
-
-
-.container_cabecalho {
-    display: flex;
-    justify-content: space-between;
-    width: 1440px;
-    max-width: 100%;
-    margin: 0 auto;
-    height: 100px;
-    align-items: center;
-}
-
-/* .box_busca {
-    display: flex;
-    justify-content: center;
-    } */
-
-
-
-.img_seta {
-    height: 50px;
-}
-
-.logo {
-    height: 100px;
-}
-
-.campo_busca {
-    width: 500px;
-    height: 42px;
-    border-radius: 30px;
-    border: solid 1px #cccccc;
+footer p {
+  font-size: 30px;
+  font-family: "Italianno", cursive;
+  color: #ffffff;
+  text-align: center;
 
 }
 
 .titulo_home {
-    font-family: "Italianno", cursive;
-    margin-top: 20px;
-    justify-content: center;
-    display: flex;
-    font-size: 60px;
+  color: #60340C;
+  display: flex;
+  justify-content: center;
+  font-size: 54px;
 }
 
-.conteudos {
 
-    background-image: url(../assets/jacinto\ pin.png);
-}
 
-.container_home {
-    width: 100%;
-    max-width: 1200px;
 
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+/* MEDIA */
+@media screen and (max-width: 1050px) {
+  .main_home {
     flex-direction: column;
-
-
-}
-
-
-.secao_cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10%;
-    cursor: pointer;
-
-
-
-}
-
-.card_categoria {
-    margin: 50px 0;
-    width: 316px;
-    height: 274px;
-    text-decoration: none;
-    background-color: #F0E6D5;
-    border: solid 1px #60340C;
-    display: flex;
-    flex-direction: column;
-    border-radius: 25px;
-    padding: 10px 50px 40px 10px;
-    justify-content: space-between;
     align-items: center;
-    font-size: 32px;
+  }
 
-    box-shadow: 0 0 40px 2px #00000075;
-    font-family: "Italianno", "cursive";
+  .secao_logo {
+    position: relative;
+    margin-top: 50px;
+  }
 
+  .secao_logo svg {
+    position: absolute;
+    top: 230px;
+    background-color: #FFD188;
+    padding: 10px 40px 5px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 2px #00000025;
+  }
 
+  .secao_logo img {
+    width: 150px;
+  }
 
-}
-
-.secao_cards img {
-    width: 276px;
-    height: 184px;
-
-}
-
-.card_vinhos img {
-    border: solid 1px #60340C;
-    border-radius: 49px;
-}
-
-.card img {
-    display: flex;
-    margin-left: 40px;
-
-}
-
-h2 {
-    color: #60340C;
-    padding: 14px 68px 15px 100px;
-}
-
-
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    background-color: #a70606;
-    font-family: "Italianno", cursive;
-
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 15px 0;
-    bottom: 0;
+  .secao_cards {
     width: 100%;
-    font-size: 30px;
+  }
 }
 
-@media screen and (max-width: 380px) {
-
-    .container_cabecalho,
-    .container_home {
-        width: 98%;
-
-
-    }
-
-    .campo_busca {
-        display: none;
-
-    }
-
-    .icone_lupa {
-        display: none;
-    }
-
-    .cabecalho_menu {
-        display: none;
-    }
-
-
-    .titulo_home {
-        font-size: 45px;
-
-        justify-content: center;
-        display: flex;
-
-
-    }
-
-
-
-
-}

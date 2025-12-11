@@ -2,7 +2,7 @@ import './Header.css';
 import icone_logo from '../../assets/icone-Logo.png'
 import { Nav, Navbar } from 'react-bootstrap';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 export default function Header() {
@@ -28,11 +28,13 @@ export default function Header() {
                     <Nav className="me-auto conteudo-nav">
                         {/* 1/3: Icone seta */}
                         <Nav.Item>
+                            <Link to={"/"} title='Ir para a página inicial'>
                             <svg className="icone_seta" width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M7.31032 55.2665C7.3133 55.7456 7.70771 56.1351 8.18679 56.1321C8.66586 56.1291 9.05539 55.7347 9.0524 55.2556L8.8027 15.1877C8.79971 14.7086 8.4053 14.3191 7.92623 14.3221C7.44715 14.3251 7.05763 14.7195 7.06061 15.1986L7.31032 55.2665ZM21.3688 34.5344C21.0333 34.874 21.0368 35.4293 21.3764 35.7647L38.0294 52.2114C38.369 52.5468 38.9243 52.5434 39.2597 52.2037C39.5951 51.8641 39.5917 51.3088 39.2521 50.9734L24.1 35.9982L62.0665 35.7616C62.5456 35.7586 62.9351 35.3642 62.9322 34.8851C62.9292 34.406 62.5348 34.0165 62.0557 34.0195L24.0891 34.2561L39.0534 19.1041C39.3889 18.7645 39.3854 18.2092 39.0458 17.8738C38.7061 17.5384 38.1508 17.5418 37.8154 17.8814L21.3688 34.5344Z"
                                     fill="white" />
                             </svg>
+                            </Link>
                         </Nav.Item>
 
                         {/* 2/3: Barra de pesquisa Central */}
