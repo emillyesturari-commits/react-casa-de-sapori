@@ -20,5 +20,25 @@ export const deletePizza = async (idPizza: string): Promise<void> => {
    }
 }
 
-export const enviarFotoParaAPI = async (file: File): Promise<string | undefined> =>
-   const formData=new FormData 
+export const enviarFotoParaAPI = async (file: File): Promise<string | undefined> => {
+
+   const formData = new FormData();
+   formData.append("file", file);
+ try{
+   const res = await axios.post ("http://localhost:3000/upload", formData,{
+     headers: {"Content-Type": "multpart/form-data"} 
+   });
+   return res.data.filrname;
+ } catch (error){
+   console.error("erro no upload da imagem: ", error);
+   return undefined;
+ }};
+
+ export const postPizza = async (pizza : Pizza): Promise<void> => {
+   try {
+      await axios.post("http://localhost:3000/pizza", pizza);
+   } catch (error) {
+      console.error("Erro ao cadastra o bolo:", error);
+      throw error;
+   }
+ };
