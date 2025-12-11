@@ -5,5 +5,4 @@ export interface Pizza {
     categorias: string[];
     imagens: string[];
     preco: number;
-    peso: number | null;
 }
