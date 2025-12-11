@@ -1,0 +1,14 @@
+/* RODAPE */
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #AD271B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-family: "Julius Sans One", sans-serif;
+  text-align: center;
+}
