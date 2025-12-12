@@ -6,7 +6,7 @@ import type { Pizza } from '../../types/Pizza';
 import { formatosServices } from '../../services/FormatosService';
 import ModalCustomizado from '../../components/ModalCustomizado/ModalCustomizado';
 import { NumericFormat } from 'react-number-format';
-import { deletePizza, getPizzas } from '../../services/PizzaService';
+import { deletePizza, enviarFotoParaAPI, getProdutos, postPizza } from '../../services/PizzaService';
 
 export default function Cadastro() {
 
@@ -52,7 +52,7 @@ export default function Cadastro() {
 
     const fetchPizzas = async () => {
         try {
-            const dados = await getPizzas();
+            const dados = await getProdutos();
             console.log(dados);
             setPizzas(dados);
         } catch (error) {

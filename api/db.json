@@ -8,54 +8,78 @@
   "produtos": [
     {
       "nome": "Pepperoni",
-      "categorias": ["pizza"],
+      "categorias": [
+        "pizza"
+      ],
       "descricao": "Pepperoni artesanal, queijo premium e massa crocante. Sabor marcante em cada fatia.",
-      "imagens": ["card_pepperoni.png"],
+      "imagens": [
+        "card_pepperoni.png"
+      ],
       "id": "pz01",
       "preco": 84.99,
       "peso": null
     },
     {
       "nome": "Brigadeiro",
-      "categorias": ["pizza"],
+      "categorias": [
+        "pizza"
+      ],
       "descricao": "Brigadeiro cremoso, base crocante e toque especial de granulado. Doçura e charme que encantam a cada mordida.",
-      "imagens": ["card_brigadeiro.png"],
+      "imagens": [
+        "card_brigadeiro.png"
+      ],
       "id": "pz02",
-      "preco": 40.00,
+      "preco": 40,
       "peso": null
     },
     {
       "nome": "Sensação",
-      "categorias": ["pizza"],
+      "categorias": [
+        "pizza"
+      ],
       "descricao": "Chocolate meio amargo rico, base crocante e M&M's selecionados. Delicadeza e sabor em cada fatia.",
-      "imagens": ["card_sensacao.png"],
+      "imagens": [
+        "card_sensacao.png"
+      ],
       "id": "pz03",
-      "preco": 60.00,
+      "preco": 60,
       "peso": null
     },
     {
       "nome": "Quatro queijo",
-      "categorias": ["pizza"],
+      "categorias": [
+        "pizza"
+      ],
       "descricao": "Queijos selecionados, cremosos e equilibrados sobre massa crocante. Sofisticação a cada fatia.",
-      "imagens": ["card_quatro_queijos.png"],
+      "imagens": [
+        "card_quatro_queijos.png"
+      ],
       "id": "pz04",
       "preco": 89.99,
       "peso": null
     },
     {
       "nome": "Frango",
-      "categorias": ["pizza"],
+      "categorias": [
+        "pizza"
+      ],
       "descricao": "Queijos selecionados, cremosos e equilibrados sobre massa crocante. Sofisticação a cada fatia.",
-      "imagens": ["card_frango.png"],
+      "imagens": [
+        "card_frango.png"
+      ],
       "id": "pz05",
-      "preco": 60.00,
+      "preco": 60,
       "peso": null
     },
     {
       "nome": "Chocolate com M&M's",
-      "categorias": ["pizza"],
+      "categorias": [
+        "pizza"
+      ],
       "descricao": "Chocolate meio amargo intenso, base crocante e M&M’s especiais. Elegância e sabor em cada pedaço.",
-      "imagens": ["card_choc_mms.png"],
+      "imagens": [
+        "card_choc_mms.png"
+      ],
       "id": "pz06",
       "preco": 59.99,
       "peso": null
